@@ -92,7 +92,6 @@ Pytest, Python, Selene \ Selenium, PyCharm, Requests, Appium, Jenkins, Selenoid,
 
 
 ## :computer: Запуск тестов из терминала
-browserstack
 ### Запуск тестов
 
 ```bash
