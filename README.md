@@ -1,4 +1,4 @@
-# Дипломный проект по автоматизации тестирования сайта и мобильного приложения KazanExpress.ru
+# Проект по автоматизации тестирования сайта и мобильного приложения KazanExpress.ru
 
 <img width="100%" title="KazanExpress.ru" src="resources/readme/kazan-ekspress.jpg">
 
