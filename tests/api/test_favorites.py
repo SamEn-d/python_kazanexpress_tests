@@ -1,3 +1,5 @@
+import os
+
 import allure
 import requests
 from allure_commons._allure import step
@@ -5,9 +7,11 @@ from allure_commons._allure import step
 from python_kazanexpress_tests.api.favorites import favorites_body
 from python_kazanexpress_tests.api.token import api_token
 
+APIURL = os.getenv('APIURL')
+
 token = {"Authorization": "Bearer " + api_token()}
-url_favorites_add = 'https://api.kazanexpress.ru/api/favorites/add'
-url_favorites_remove = 'https://api.kazanexpress.ru/api/favorites/remove'
+url_favorites_add = APIURL + 'api/favorites/add'
+url_favorites_remove = APIURL + 'api/favorites/remove'
 favorites_id = 126041
 
 

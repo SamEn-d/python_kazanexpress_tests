@@ -1,13 +1,16 @@
+import os
+
 import allure
 import requests
 from allure_commons._allure import step
 from python_kazanexpress_tests.api.add_to_cart import add_to_cart
 from python_kazanexpress_tests.api.token import api_token
 
+APIURL = os.getenv('APIURL')
 
 token = {"Authorization": "Bearer " + api_token()}
-add_url = 'https://api.kazanexpress.ru/api/cart/add'
-remove_url = 'https://api.kazanexpress.ru/api/cart/remove'
+add_url = APIURL + 'api/cart/add'
+remove_url = APIURL + 'api/cart/remove'
 skuId = 4800380
 
 
